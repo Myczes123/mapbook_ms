@@ -12,4 +12,8 @@ users=[
 
 Twoj znaomy z opublikowal tyle i tyle postow
 for user in users:
-    print(f"twoj zajomy {user['name']}!"),
+    print(f"twoj zajomy {user['name']} , z:{user['location']} , opublikowal :{user['posts'])
+    
+def get_user_info(users_data: list)->None:
+
+    get_user_info(users)
