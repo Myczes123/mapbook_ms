@@ -1,21 +1,26 @@
-from utils.controller import get_user_info
-from utils.model import
+from init.controller import get_user_info, add_user, remove_user,
+from init.model import users
 
 def main():
-    print("===================MENU===========")
-    print('0-zamknij aplikacje')
-    print('1-wyswietl co u zajomych ')
-    print('2-dodaj nowego uzytkownika ')
-    print('3-usun uzytkownika ')
-    print('4-edytuj uzytkownika ')
-    print("===================MENU===========")
+
     while True:
-        choice = input('wybierz opcje menu')
-        if choice == '0':
-            break
-            if choice == '1':
+        print("==========MENU=================")
+        print("0 - zamknij aplikacje")
+        print("1 - wyświetl co u znajomych")
+        print("2 - dodaj nowego użytkownika")
+        print("3 - usuń użytkownika")
+        print("4 - edytuj użytkownika")
+        print("==============MENU===================")
 
-    get_user_info(users)
+        choice = input("wybierz opcje menu")
+        if choice == '0': break
+        if choice == '1': get_user_info(users)
+        if choice == '2': add_user(users)
+        if choice == '3': remove_user(users)
+        if choice == '4': add_user(users)
 
-    if__name__ == "__main__":
+
+
+if _name_ == "_main_":
     main()
+
