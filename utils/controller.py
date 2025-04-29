@@ -1,30 +1,20 @@
-moja_lista_na_sok= []
-print(moja_lista_na_sok)
+def get_user_info(users_data: list) -> None:
+    for user in users_data:
+        print(f"Twój znajomy {user['name']}, z miejscowości: {user['location']} opublikował {user['posts']} postów")
 
 
-    def add_user(users_data: list)->None:
-    new_name = input('podaj lokalizacje uzykownika  ')
-    new_location =input('podaj lokalizacje uzykownika  ')
-    new_numbers =int(input('podaj numer postow') )
-    users_data.append({"name":new_name,"Location":new_location,"posty":new_numbers})
-
- add_user(moja_lista_na_sok)
-
-users = [
-    {"name": "Beata", "Location": "Lublin", "posts": 500},
-]
-
+def add_user(users_data: list) -> None:
+    new_name = input('podaj imię nowego uzytkownika: ')
+    new_location = input('podaj lokalizację uzytkownika: ')
+    new_posts = int(input('podaj liczbę postów nowego uzytkownika: '))
+    users_data.append({"name": new_name, "location": new_location, "posts": new_posts}, )
 
 def remove_user(users_data: list) -> None:
-    uzytkownik_do_usuneicia = input('podaj uzytkownika do usuniecia')
+    uzytkownik_do_usunięcia = input('podaj uzytkownika do usuniecia: ')
 
     for user in users_data:
-
-        if user['name'] == uzytkownik_do_usuneicia:
+        if user['name'] == uzytkownik_do_usunięcia:
             users_data.remove(user)
 
 
-print(users)
-
-print(moja_lista_na_sok)
 
