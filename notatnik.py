@@ -56,7 +56,7 @@ entry_liczba_postow.grid(row=4,column=1)
 label_szczegoly_obiektow=Label(ramka_formularz, text='szczegoly')
 label_szczegoly_obiektow.grid(row=0,column=0)
 
-label
+
 
 
 
